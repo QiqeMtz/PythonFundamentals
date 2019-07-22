@@ -140,3 +140,24 @@ myList.reverse()
 print("List reversed: ", myList)
 
 # LIST COMPREHENSION - create lists
+pow2 = [2 ** x for x in range(10)]
+print(pow2)
+
+# Code equivalent to:
+pow2.clear()
+
+for x in range(10):
+    pow2.append(2**x)
+print(pow2)
+
+# Adding more complexity with if statemens and more for loops
+pow2.clear()
+
+pow2 = [2 ** x for x in range(10) if x > 5]
+print(pow2)
+
+odd = [x for x in range(20) if x % 2 == 1]
+print(odd)
+
+combinations = [x + y for x in ["Python ", "C "] for y in ["Language", "Programming"]]
+print(combinations)

@@ -46,3 +46,17 @@ drew = {"username":"squidly", "online":True, "followers":305}
 drew["followers"] = 315
 
 print(drew)
+
+jesse.clear()
+
+jesse = {"username":"jesse-1", "online":False, "points":723}
+jesse.update({"followers":481})
+print(jesse)
+
+sammy.update({"online":False})
+print(sammy)
+sammy["online"]=True
+print(sammy)
+
+del sammy["online"]
+print(sammy)
